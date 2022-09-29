@@ -1,0 +1,46 @@
+
+img {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+div {
+    width: 80%;
+    height: 50%;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: azure;
+}
+
+
+@media (max-width: 768px) and (min-width: 376px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: aliceblue;
+    }
+
+    div {
+        width: 90%;
+        height: 50%;
+    }
+}
+
+
+@media (min-width: 769px) {
+    body {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: antiquewhite;
+    }
+
+    div {
+        width: 30em;
+        height: 20em;
+        padding: 2em;
+    }
+}
+
